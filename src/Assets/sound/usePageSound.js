@@ -8,5 +8,5 @@ export default function usePageSound() {
 
   useEffect(() => {
     playPageSound();
-  }, [location.pathname]); // ✅ every route change
+  }, [location.pathname, playPageSound]);
 }
